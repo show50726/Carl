@@ -6,9 +6,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	Animator anim;
 	public GameObject bullet;
-	float input_x = 0;
-	float input_y = -1f;
-
+    float input_x = 0;
+    float input_y = -1f;
+    
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();

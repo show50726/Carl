@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour {
 		transform.position += new Vector3 (x, y, 0)* Time.deltaTime * speed;
 	}
 
-	private void OnTriggerEnter2D(Collider2D col){
+	private void OnCollosionEnter2D(Collision2D col){
 		anim.SetBool ("Hit", true);
 		Destroy (gameObject);
 	}
